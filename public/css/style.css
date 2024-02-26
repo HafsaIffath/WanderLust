@@ -155,11 +155,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: none !important;
 }
 
 .filter {
   text-align: center;
-  /* margin-right: 1rem; */
+  margin-right: 1rem;
   margin-top: 2rem;
   opacity: 0.7;
 }
@@ -185,15 +186,40 @@ body {
   border: 1px solid black;
   border-radius: 1rem;
   height: 2.75rem;
-
   padding: 1rem;
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
+  padding-top: 1.4rem;
+  padding-bottom: 1.3rem;
 }
 
 @media (max-width: 770px) {
-  .filter {
-    display: none;
+  .tax-toggle {
+    position: relative;
+    bottom: 2px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value as needed */
+    left: 20px;
+    margin-left: 0;
   }
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter {
+    text-align: center;
+    margin: 1rem; /* Adjust margin as needed */
+    opacity: 1; /* Ensure filters are fully visible */
+  }
+
+  .listings-nav {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.navbar-toggler-icon i {
+  font-size: 1rem;
 }
